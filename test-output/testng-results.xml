@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-22T23:32:02 IST" name="Suite" finished-at="2022-07-22T23:35:02 IST" duration-ms="179722">
+    <groups>
+    </groups>
+    <test started-at="2022-07-22T23:32:02 IST" name="TestFirefox" finished-at="2022-07-22T23:34:32 IST" duration-ms="149302">
+      <class name="com.test.actitime.LoginLogout">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.test.actitime.LoginLogout@6c284af]" started-at="2022-07-22T23:32:02 IST" name="setup" finished-at="2022-07-22T23:33:16 IST" duration-ms="73914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="logintoapp()[pri:0, instance:com.test.actitime.LoginLogout@6c284af]" started-at="2022-07-22T23:33:16 IST" name="logintoapp" finished-at="2022-07-22T23:34:28 IST" duration-ms="72182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoapp -->
+        <test-method signature="login()[pri:0, instance:com.test.actitime.LoginLogout@6c284af]" started-at="2022-07-22T23:34:28 IST" name="login" finished-at="2022-07-22T23:34:28 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="logoutfromapp()[pri:0, instance:com.test.actitime.LoginLogout@6c284af]" started-at="2022-07-22T23:34:28 IST" name="logoutfromapp" finished-at="2022-07-22T23:34:31 IST" duration-ms="3121" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: #logoutLink
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-QNR4PHQ', ip: '192.168.21.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [35390d68-f3f2-4816-ab62-232f4b17ae19, findElement {using=id, value=logoutLink}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:65436, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:65436/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 35390d68-f3f2-4816-ab62-232f4b17ae19]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #logoutLink
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-QNR4PHQ', ip: '192.168.21.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [35390d68-f3f2-4816-ab62-232f4b17ae19, findElement {using=id, value=logoutLink}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:65436, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 9316, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:65436/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 35390d68-f3f2-4816-ab62-232f4b17ae19
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at com.pom.actitime.HomePage.logoutMethod(HomePage.java:54)
+at com.generics.actitime.BaseTest.logoutfromapp(BaseTest.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutfromapp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.actitime.LoginLogout@6c284af]" started-at="2022-07-22T23:34:32 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1658513072020" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.test.actitime.LoginLogout -->
+    </test> <!-- TestFirefox -->
+    <test started-at="2022-07-22T23:32:02 IST" name="TestChrome" finished-at="2022-07-22T23:34:44 IST" duration-ms="161793">
+      <class name="com.test.actitime.LoginLogout">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.test.actitime.LoginLogout@5149d738]" started-at="2022-07-22T23:32:02 IST" name="setup" finished-at="2022-07-22T23:32:26 IST" duration-ms="23416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="logintoapp()[pri:0, instance:com.test.actitime.LoginLogout@5149d738]" started-at="2022-07-22T23:32:26 IST" name="logintoapp" finished-at="2022-07-22T23:34:15 IST" duration-ms="109308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoapp -->
+        <test-method signature="login()[pri:0, instance:com.test.actitime.LoginLogout@5149d738]" started-at="2022-07-22T23:34:15 IST" name="login" finished-at="2022-07-22T23:34:15 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="logoutfromapp()[pri:0, instance:com.test.actitime.LoginLogout@5149d738]" started-at="2022-07-22T23:34:15 IST" name="logoutfromapp" finished-at="2022-07-22T23:34:29 IST" duration-ms="13713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutfromapp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.actitime.LoginLogout@5149d738]" started-at="2022-07-22T23:34:29 IST" name="teardown" finished-at="2022-07-22T23:34:44 IST" duration-ms="15193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.test.actitime.LoginLogout -->
+    </test> <!-- TestChrome -->
+    <test started-at="2022-07-22T23:32:02 IST" name="TestEdge" finished-at="2022-07-22T23:35:02 IST" duration-ms="179722">
+      <class name="com.test.actitime.LoginLogout">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.test.actitime.LoginLogout@1750fbeb]" started-at="2022-07-22T23:32:02 IST" name="setup" finished-at="2022-07-22T23:33:13 IST" duration-ms="70655" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="logintoapp()[pri:0, instance:com.test.actitime.LoginLogout@1750fbeb]" started-at="2022-07-22T23:33:13 IST" name="logintoapp" finished-at="2022-07-22T23:34:50 IST" duration-ms="96836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoapp -->
+        <test-method signature="login()[pri:0, instance:com.test.actitime.LoginLogout@1750fbeb]" started-at="2022-07-22T23:34:50 IST" name="login" finished-at="2022-07-22T23:34:50 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="logoutfromapp()[pri:0, instance:com.test.actitime.LoginLogout@1750fbeb]" started-at="2022-07-22T23:34:50 IST" name="logoutfromapp" finished-at="2022-07-22T23:34:57 IST" duration-ms="7451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutfromapp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.actitime.LoginLogout@1750fbeb]" started-at="2022-07-22T23:34:57 IST" name="teardown" finished-at="2022-07-22T23:35:02 IST" duration-ms="4737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.test.actitime.LoginLogout -->
+    </test> <!-- TestEdge -->
+  </suite> <!-- Suite -->
+</testng-results>

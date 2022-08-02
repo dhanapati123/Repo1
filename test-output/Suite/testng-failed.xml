@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestEdge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.test.actitime.LoginLogout">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="login"/>
+          <include name="logoutfromapp"/>
+          <include name="logintoapp"/>
+        </methods>
+      </class> <!-- com.test.actitime.LoginLogout -->
+    </classes>
+  </test> <!-- TestEdge(failed) -->
+</suite> <!-- Failed suite [Suite] -->
